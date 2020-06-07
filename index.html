@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="script.js" type="text/javascript"></script> 
+
+ <link rel="stylesheet" href="style3.css" type="text/css"/>
+    </head>
+<body class="sign">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="news.html">News</a>
+    
+            
+            <a href="players.html">Players</a>
+                <a href="Leagues.html">Leagues</a>
+
+    <a href="store.html">Store</a>
+            <a href="index.html">Sign</a>
+       
+</div>
+
+<div id="main">
+ <span  href="javascript:void(0);" onclick="openNav()" style="font-family: French Script MT,sans-serif;font-size: 35px;color:#fff;font-weight: bold;"> <img src="pic/logo2.PNG"></span>
+</div>
+
+
+            <div class="navbar">
+     <div class="logo">
+                <span style="font-family:Kristen ITC;float: left;font-size: 35px;color: white;">Sport</span>
+                </div>
+        <a href="news.html">News</a>
+                  
+            <a href="players.html">Players</a>
+                                <a href="Leagues.html">Leagues</a>
+
+                  <a href="store.html">Store</a>
+            <a href="index.html">Sign</a>
+        </div>
+<form id="regForm"  method="post" action="" onsubmit="nextPrev(1)">
+  <h1>Register:</h1>
+ 
+  <div class="tab">Name:
+    <p><input placeholder="First name...(alphabet characters only)" oninput="this.className = ''" type="text"  name="fname" id="fname"></p>
+    <p><input placeholder="Last name...(alphabet characters only)" oninput="this.className = ''"  name="lname" id="lname"></p>
+  </div>
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail...(xx@xx.xx)" oninput="this.className = ''" id="email" type="text"></p>
+    <p><input placeholder="Phone...(11 digit)" oninput="this.className = ''" id="phone"></p>
+  </div>
+  <div class="tab">Address:
+      
+      <p><input placeholder="Address..." oninput="this.className = ''"></p>
+   Gender:
+      <p>
+       
+       <select class="text">
+                
+                <option>male</option>
+          <option>female</option>
+                </select>
+      </p>
+   
+  </div>
+  <div class="tab">Login Info:
+   
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password" id="pass" title="password must be 8 characters and begins with uppercase include digit, special character no spaces"></p>
+      <p>password must be 8 characters and begins with uppercase include digit, special character no spaces</p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn"  value="submit" form="regForm"  onclick="nextPrev(1)">Next</button>
+        <button type="button" onclick="valiForm()" id="submit" style="display: none;">submit</button>
+     
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script>
+var currentTab = 0; 
+showTab(currentTab); 
+
+
+</script>
+
+</body>
+</html>
